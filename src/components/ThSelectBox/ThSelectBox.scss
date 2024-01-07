@@ -1,0 +1,84 @@
+.select-th-box {
+  display: flex;
+  align-items: center;
+
+  select {
+    width: 130px;
+    background: transparent;
+    border: 0px;
+    border-bottom: 1px solid white;
+    color: white;
+
+    &:focus {
+      outline: none;
+    }
+
+    option {
+      color: black;
+    }
+  }
+
+  .arrow {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .sort {
+    width: 20px;
+    height: 20px;
+    flex-grow: 1;
+    position: relative;
+
+    >span {
+      display: block;
+      position: relative;
+      height: 10px;
+      cursor: pointer;
+    }
+
+    .down-arrow {
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        border-top: 5px solid white;
+        border-bottom: 5px solid transparent;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        bottom: -3px;
+        right: 2px;
+      }
+
+      &:hover:after {
+        content: '';
+        border-top: 5px solid green;
+      }
+    }
+
+    .up-arrow {
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        border-bottom: 5px solid white;
+        border-top: 5px solid transparent;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        top: -3px;
+        right: 2px;
+      }
+
+      &:hover:before {
+        border-bottom: 5px solid green;
+      }
+    }
+  }
+
+}

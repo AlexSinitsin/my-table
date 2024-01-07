@@ -1,0 +1,26 @@
+.add-user-box {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  margin-bottom: 50px;
+
+  input {
+    width: calc(50% - 5px);
+    height: 30px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border: 2px solid rgb(46, 46, 168);
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  button {
+    height: 30px;
+    background: rgb(46, 46, 168);
+    border: 0px;
+    color: white;
+    border-radius: 4px;
+    width: 100%;
+  }
+}
