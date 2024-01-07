@@ -22,7 +22,7 @@
     position: fixed;
     width: 200px;
     top: 100px;
-    left: calc(50vw - 100px);
+    left: calc(50vw - 130px);
     padding: 30px;
     background: rgb(46, 46, 168);
     z-index: 100;
@@ -119,6 +119,7 @@ tbody {
       &.status-false {
         padding-left: 24px;
         position: relative;
+        white-space: nowrap;
 
         &:before {
           content: '';
@@ -135,6 +136,7 @@ tbody {
       &.status-true {
         padding-left: 24px;
         position: relative;
+        white-space: nowrap;
 
         &:before {
           content: '';

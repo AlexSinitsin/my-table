@@ -3,9 +3,13 @@
 
   h1 {
     font-family: Arial;
+    font-size: 25px;
 
   }
-
+  .table-wrapper {
+    width: 100%;
+    overflow-x: scroll;
+  }
   table {
     width: 100%;
 
