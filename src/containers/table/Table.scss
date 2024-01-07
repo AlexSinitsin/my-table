@@ -10,6 +10,12 @@
     width: 100%;
     overflow-x: scroll;
   }
+  .table-wrapper::-webkit-scrollbar { width: 0; }
+
+  .table-wrapper { -ms-overflow-style: none; }
+
+  .table-wrapper { overflow: -moz-scrollbars-none; }
+
   table {
     width: 100%;
 
